@@ -1,421 +1,332 @@
-RELEASE=`date +%Y:%m:%d:%H:%M:%S`
-echo -e "\033[5;46;43;37m
-           执行时间为$RELEASE         \033[0m"
-echo -e "设备"
-# -n "设备："
-getprop ro.product.brand
-echo -e "设备类型"
-# -n "设备类型："
-getprop ro.product.model
-echo -"》"
-echo -"》》"
-echo -"》》》"
-echo -"》》》》"
-echo -"》》》》》"
-echo -e "\033[41m公告:本程序支持云更新，加群获取卡密\033[0m"
-echo -e "当前版本2.0"
-echo -e "功能:当前支持半火🔥，以及预防人脸🤨"
-echo -e "开启中"
-iptables -
-iptables -A OUTPUT -m string --string "android.crashsight.qq.com" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "chapangzhan.com" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "tracking.miui.com" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "mitv.tracking.miui.com" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "app.miui.com" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "fcanr.tracking.miui.com" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "router.tracking.miui.com" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "mid.apd-vodp2plogin.teg.tencent-cloud.net" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "mia.payba.cn" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "apd-pcdnieghplogin.teg.tencent-cloud.net" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "ipv6.cn.voice.gcloudcs.com" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "capi.voice.gcloud.qq.com" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "ssl.payba.cn" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "ap6.ssl.msdk.qq.com" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "a.ssl.msdk.qq.com" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "ap-shanghai.tcb-ws.tencentcloudapi.com" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "vip.ap-shanghai.tcb-ws.tencentcloudapi.com" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "117.wefun.vip" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "avavav.xnfxxx.xyz" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "av.jdav01.xyz" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "xvideos.zhaosaozi.co" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "xvideos.zhaofeizi.co" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "msdktest.qq.com" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "wxlobby.pg.qq.com" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "global.cschannel.anticheatexpert.com" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "nj.cschannel.anticheatexpert.com" --algo bm --to 65535 -j DROP
-iptables -A INPUT -p tcp --dport 44358 -j DROP
-iptables -A INPUT -p tcp --dport 38146 -j DROP
-iptables -A INPUT -p tcp --dport 42234 -j DROP
-iptables -A INPUT -p tcp --dport 44266 -j DROP
-iptables -A INPUT -p tcp --dport 48572 -j DROP
-iptables -A INPUT -p tcp --dport 45833 -j DROP
-iptables -A INPUT -p tcp --dport 44250 -j DROP
-iptables -A INPUT -p tcp --dport 31003 -j DROP
-iptables -A INPUT -p tcp --dport 37802 -j DROP
-iptables -A INPUT -p tcp --dport 40954 -j DROP
-iptables -A INPUT -p tcp --dport 41924 -j DROP
-iptables -A INPUT -p tcp --dport 48862 -j DROP
-iptables -A INPUT -p tcp --dport 48942 -j DROP
-iptables -A INPUT -p tcp --dport 40724 -j DROP
-iptables -A INPUT -p tcp --dport 46180 -j DROP
-iptables -A INPUT -p tcp --dport 38104 -j DROP
-iptables -A INPUT -p tcp --dport 38250 -j DROP
-iptables -A INPUT -p tcp --dport 43362 -j DROP
-iptables -A INPUT -p tcp --dport 27042 -j DROP
-iptables -A INPUT -p tcp --dport 38188 -j DROP
-iptables -A INPUT -p tcp --dport 38190 -j DROP
-iptables -A INPUT -p tcp --dport 38192 -j DROP
-iptables -A INPUT -p tcp --dport 48711 -j DROP
-iptables -A INPUT -p tcp --dport 39246 -j DROP
-iptables -A INPUT -p tcp --dport 48744 -j DROP
-iptables -A INPUT -p tcp --dport 46037 -j DROP
-iptables -A INPUT -p tcp --dport 44015 -j DROP
-iptables -A INPUT -p tcp --dport 40823 -j DROP
-iptables -A INPUT -p tcp --dport 49282 -j DROP
-iptables -A INPUT -p tcp --dport 54863 -j DROP
-iptables -A INPUT -p tcp --dport 41328 -j DROP
-iptables -A INPUT -p tcp --dport 47556 -j DROP
-iptables -A INPUT -p tcp --dport 46626 -j DROP
-iptables -A INPUT -p tcp --dport 41096 -j DROP
-iptables -A INPUT -p tcp --dport 46992 -j DROP
-iptables -A INPUT -p tcp --dport 44532 -j DROP
-iptables -A INPUT -p tcp --dport 39778 -j DROP
-iptables -A INPUT -p tcp --dport 48154 -j DROP
-iptables -A INPUT -p tcp --dport 41000 -j DROP
-iptables -A INPUT -p tcp --dport 47527 -j DROP
-iptables -A INPUT -p tcp --dport 44509 -j DROP
-iptables -A INPUT -p tcp --dport 44863 -j DROP
-iptables -A INPUT -p tcp --dport 47994 -j DROP
-iptables -A INPUT -p tcp --dport 30851 -j DROP
-iptables -A INPUT -p tcp --dport 28524 -j DROP
-iptables -A INPUT -p tcp --dport 40114 -j DROP
-iptables -A INPUT -p tcp --dport 10339 -j DROP
-iptables -A INPUT -p tcp --dport 38178 -j DROP
-iptables -A INPUT -p tcp --dport 41602 -j DROP
-iptables -A INPUT -p tcp --dport 37498 -j DROP
-iptables -A INPUT -p tcp --dport 37500 -j DROP
-iptables -A INPUT -p tcp --dport 37100 -j DROP
-iptables -A INPUT -p tcp --dport 40238 -j DROP
-iptables -A INPUT -p tcp --dport 43068 -j DROP
-iptables -A INPUT -p tcp --dport 40394 -j DROP
-iptables -A INPUT -p tcp --dport 49244 -j DROP
-iptables -A INPUT -p tcp --dport 40400 -j DROP
-iptables -A INPUT -p tcp --dport 49252 -j DROP
-iptables -A INPUT -p tcp --dport 20000 -j DROP
-iptables -A INPUT -p tcp --dport 38514 -j DROP
-iptables -A INPUT -p tcp --dport 40412 -j DROP
-iptables -A INPUT -p tcp --dport 8085 -j DROP
-iptables -A INPUT -p tcp --dport 44194 -j DROP
-iptables -A INPUT -p tcp --dport 44196 -j DROP
-iptables -A INPUT -p tcp --dport 50000 -j DROP
-iptables -A INPUT -p tcp --dport 46122 -j DROP
-iptables -A INPUT -p tcp --dport 20851 -j DROP
-iptables -A INPUT -p tcp --dport 28883 -j DROP
-iptables -A INPUT -p tcp --dport 44786 -j DROP
-iptables -A INPUT -p tcp --dport 44792 -j DROP
-iptables -A INPUT -p tcp --dport 44794 -j DROP
-iptables -A INPUT -p tcp --dport 44802 -j DROP
-iptables -A INPUT -p tcp --dport 44830 -j DROP
-iptables -A INPUT -p tcp --dport 48922 -j DROP
-iptables -A INPUT -p tcp --dport 44828 -j DROP
-iptables -A INPUT -p tcp --dport 41800 -j DROP
-iptables -A INPUT -p tcp --dport 41027 -j DROP
-iptables -A INPUT -p tcp --dport 43978 -j DROP
-iptables -A INPUT -p tcp --dport 40258 -j DROP
-iptables -A INPUT -p tcp --dport 17800 -j DROP
-iptables -A INPUT -p tcp --dport 40028 -j DROP
-iptables -A INPUT -p tcp --dport 43080 -j DROP
-iptables -A INPUT -p tcp --dport 46266 -j DROP
-iptables -A INPUT -p tcp --dport 45636 -j DROP
-iptables -A INPUT -p tcp --dport 44306 -j DROP
-iptables -A INPUT -p tcp --dport 37432 -j DROP
-iptables -A INPUT -p tcp --dport 37056 -j DROP
-iptables -A INPUT -p tcp --dport 43208 -j DROP
-iptables -A INPUT -p tcp --dport 37058 -j DROP
-iptables -A INPUT -p tcp --dport 37052 -j DROP
-iptables -A INPUT -p tcp --dport 37064 -j DROP
-iptables -A INPUT -p tcp --dport 37066 -j DROP
-iptables -A INPUT -p tcp --dport 37062 -j DROP
-iptables -A INPUT -p tcp --dport 43994 -j DROP
-iptables -A INPUT -p tcp --dport 48564 -j DROP
-iptables -A INPUT -p tcp --dport 40038 -j DROP
-iptables -A INPUT -p tcp --dport 47506 -j DROP
-iptables -A INPUT -p tcp --dport 24863 -j DROP
-iptables -A INPUT -p tcp --dport 47084 -j DROP
-iptables -A INPUT -p tcp --dport 48908 -j DROP
-iptables -A INPUT -p tcp --dport 43242 -j DROP
-iptables -A INPUT -p tcp --dport 47794 -j DROP
-iptables -A INPUT -p tcp --dport 43510 -j DROP
-iptables -A INPUT -p tcp --dport 37264 -j DROP
-iptables -A INPUT -p tcp --dport 14863 -j DROP
-iptables -A INPUT -p tcp --dport 43258 -j DROP
-iptables -A INPUT -p tcp --dport 46055 -j DROP
-iptables -A INPUT -p tcp --dport 31003 -j DROP
-iptables -A INPUT -p tcp --dport 41313 -j DROP
-iptables -A INPUT -p tcp --dport 27042 -j DROP
-iptables -A INPUT -p tcp --dport 47180 -j DROP
-iptables -A INPUT -p tcp --dport 41666 -j DROP
-iptables -A INPUT -p tcp --dport 64863 -j DROP
-iptables -A INPUT -p tcp --dport 47496 -j DROP
-iptables -A INPUT -p tcp --dport 44550 -j DROP
-iptables -A INPUT -p tcp --dport 30851 -j DROP
-iptables -A INPUT -p tcp --dport 20237 -j DROP
-iptables -A INPUT -p tcp --dport 39364 -j DROP
-iptables -A INPUT -p tcp --dport 41254 -j DROP
-iptables -A INPUT -p tcp --dport 38460 -j DROP
-iptables -A INPUT -p tcp --dport 44994 -j DROP
-iptables -A INPUT -p tcp --dport 43108 -j DROP
-iptables -A INPUT -p tcp --dport 43550 -j DROP
-iptables -A INPUT -p tcp --dport 8013 -j DROP
-iptables -A INPUT -p tcp --dport 46118 -j DROP
-iptables -A INPUT -p tcp --dport 42848 -j DROP
-iptables -A INPUT -p tcp --dport 39296 -j DROP
-iptables -A INPUT -p tcp --dport 39014 -j DROP
-iptables -A INPUT -p tcp --dport 41870 -j DROP
-iptables -A INPUT -p tcp --dport 44128 -j DROP
-iptables -A INPUT -p tcp --dport 38996 -j DROP
-iptables -A INPUT -p tcp --dport 31762 -j DROP
-iptables -A INPUT -p tcp --dport 44694 -j DROP
-iptables -A INPUT -p tcp --dport 40730 -j DROP
-iptables -A INPUT -p tcp --dport 45262 -j DROP
-iptables -A INPUT -p tcp --dport 21762 -j DROP
-iptables -A INPUT -p tcp --dport 41762 -j DROP
-iptables -A INPUT -p tcp --dport 39056 -j DROP
-iptables -A INPUT -p tcp --dport 41348 -j DROP
-iptables -A INPUT -p tcp --dport 5692 -j DROP
-iptables -A INPUT -p tcp --dport 44124 -j DROP
-iptables -A INPUT -p tcp --dport 49155 -j DROP
-iptables -A INPUT -p tcp --dport 48220 -j DROP
-iptables -A INPUT -p tcp --dport 48222 -j DROP
-iptables -A INPUT -p tcp --dport 41422 -j DROP
-iptables -A INPUT -p tcp --dport 49290 -j DROP
-iptables -A INPUT -p tcp --dport 40522 -j DROP
-iptables -A INPUT -p tcp --dport 11762 -j DROP
-iptables -A INPUT -p tcp --dport 40998 -j DROP
-iptables -A INPUT -p tcp --dport 37034 -j DROP
-iptables -A INPUT -p tcp --dport 41528 -j DROP
-iptables -A INPUT -p tcp --dport 37508 -j DROP
-iptables -A INPUT -p tcp --dport 61762 -j DROP
-iptables -A INPUT -p tcp --dport 39030 -j DROP
-iptables -A INPUT -p tcp --dport 49958 -j DROP
-iptables -A INPUT -p tcp --dport 41842 -j DROP
-iptables -A INPUT -p tcp --dport 47648 -j DROP
-iptables -A INPUT -p tcp --dport 45858 -j DROP
-iptables -A INPUT -p tcp --dport 41748 -j DROP
-iptables -A INPUT -p tcp --dport 42170 -j DROP
-iptables -A INPUT -p tcp --dport 47668 -j DROP
-iptables -A INPUT -p tcp --dport 17500 -j DROP
-iptables -A INPUT -p tcp --dport 43612 -j DROP
-iptables -A INPUT -p tcp --dport 44158 -j DROP
-iptables -A INPUT -p tcp --dport 44412 -j DROP
-iptables -A INPUT -p tcp --dport 37854 -j DROP
-iptables -A INPUT -p tcp --dport 44514 -j DROP
-iptables -A INPUT -p tcp --dport 44962 -j DROP
-iptables -A INPUT -p tcp --dport 45760 -j DROP
-iptables -A INPUT -p tcp --dport 46156 -j DROP
-iptables -A INPUT -p tcp --dport 46452 -j DROP
-iptables -A INPUT -p tcp --dport 46752 -j DROP
-iptables -A INPUT -p tcp --dport 46900 -j DROP
-iptables -A INPUT -p tcp --dport 51762 -j DROP
-iptables -A INPUT -p tcp --dport 47446 -j DROP
-iptables -A INPUT -p tcp --dport 47796 -j DROP
-iptables -A INPUT -p tcp --dport 47898 -j DROP
-iptables -A INPUT -p tcp --dport 48044 -j DROP
-iptables -A INPUT -p tcp --dport 48218 -j DROP
-iptables -A INPUT -p tcp --dport 45422 -j DROP
-iptables -A INPUT -p tcp --dport 48720 -j DROP
-iptables -A INPUT -p tcp --dport 49144 -j DROP
-iptables -A INPUT -p tcp --dport 49218 -j DROP
-iptables -A INPUT -p tcp --dport 49844 -j DROP
-iptables -A INPUT -p tcp --dport 49996 -j DROP
-iptables -A INPUT -p tcp --dport 37394 -j DROP
-iptables -A INPUT -p tcp --dport 37542 -j DROP
-iptables -A INPUT -p tcp --dport 8081 -j DROP
-iptables -A INPUT -p tcp --dport 37788 -j DROP
-iptables -A INPUT -p tcp --dport 45876 -j DROP
-iptables -A INPUT -p tcp --dport 50367 -j DROP
-iptables -A INPUT -p tcp --dport 38286 -j DROP
-iptables -A INPUT -p tcp --dport 8011 -j DROP
-iptables -A INPUT -p tcp --dport 47738 -j DROP
-iptables -A INPUT -p tcp --dport 41656 -j DROP
-iptables -A INPUT -p tcp --dport 443 -j DROP
-iptables -A INPUT -p tcp --dport 10001 -j DROP
-iptables -A INPUT -p tcp --dport 37806 -j DROP
-iptables -A INPUT -p tcp --dport 39102 -j DROP
-iptables -A INPUT -p tcp --dport 38346 -j DROP
-iptables -A INPUT -p tcp --dport 39548 -j DROP
-iptables -A INPUT -p tcp --dport 47416 -j DROP
-iptables -A INPUT -p tcp --dport 46550 -j DROP
-iptables -A INPUT -p tcp --dport 44488 -j DROP
-iptables -A INPUT -p tcp --dport 40524 -j DROP
-iptables -A INPUT -p tcp --dport 43632 -j DROP
-iptables -A INPUT -p tcp --dport 38616 -j DROP
-iptables -A INPUT -p tcp --dport 49518 -j DROP
-iptables -A INPUT -p tcp --dport 42410 -j DROP
-iptables -A INPUT -p tcp --dport 45446 -j DROP
-iptables -A INPUT -p tcp --dport 49220 -j DROP
-iptables -A INPUT -p tcp --dport 47540 -j DROP
-iptables -A INPUT -p tcp --dport 45928 -j DROP
-iptables -A INPUT -p tcp --dport 40622 -j DROP
-iptables -A INPUT -p tcp --dport 49658 -j DROP
-iptables -A INPUT -p tcp --dport 43582 -j DROP
-iptables -A INPUT -p tcp --dport 45640 -j DROP
-iptables -A INPUT -p tcp --dport 42808 -j DROP
-iptables -A INPUT -p tcp --dport 44526 -j DROP
-iptables -A INPUT -p tcp --dport 48852 -j DROP
-iptables -A INPUT -p tcp --dport 47704 -j DROP
-iptables -A INPUT -p tcp --dport 43140 -j DROP
-iptables -A INPUT -p tcp --dport 39826 -j DROP
-iptables -A INPUT -p tcp --dport 42168 -j DROP
-iptables -A INPUT -p tcp --dport 37994 -j DROP
-iptables -A INPUT -p tcp --dport 47824 -j DROP
-iptables -A INPUT -p tcp --dport 48066 -j DROP
-iptables -A INPUT -p tcp --dport 43892 -j DROP
-iptables -A INPUT -p tcp --dport 42974 -j DROP
-iptables -A INPUT -p tcp --dport 47288 -j DROP
-iptables -A INPUT -p tcp --dport 42032 -j DROP
-iptables -A INPUT -p tcp --dport 45582 -j DROP
-iptables -A INPUT -p tcp --dport 49898 -j DROP
-iptables -A INPUT -p tcp --dport 49896 -j DROP
-iptables -A INPUT -p tcp --dport 27043 -j DROP
-iptables -A INPUT -p tcp --dport 43872 -j DROP
-iptables -A INPUT -p tcp --dport 37440 -j DROP
-iptables -A INPUT -p tcp --dport 41710 -j DROP
-iptables -A INPUT -p tcp --dport 41712 -j DROP
-iptables -A INPUT -p tcp --dport 42106 -j DROP
-iptables -A INPUT -p tcp --dport 42404 -j DROP
-iptables -A INPUT -p tcp --dport 48916 -j DROP
-iptables -A INPUT -p tcp --dport 43523 -j DROP
-iptables -A INPUT -p tcp --dport 40650 -j DROP
-iptables -A INPUT -p tcp --dport 38755 -j DROP
-iptables -A INPUT -p tcp --dport 8030 -j DROP
-iptables -A INPUT -p tcp --dport 40654 -j DROP
-iptables -A INPUT -p tcp --dport 40656 -j DROP
-iptables -A INPUT -p tcp --dport 42432 -j DROP
-iptables -A INPUT -p tcp --dport 47838 -j DROP
-iptables -A INPUT -p tcp --dport 42458 -j DROP
-iptables -A INPUT -p tcp --dport 41040 -j DROP
-iptables -A INPUT -p tcp --dport 49128 -j DROP
-iptables -A INPUT -p tcp --dport 40672 -j DROP
-iptables -A INPUT -p tcp --dport 27042 -j DROP
-iptables -A INPUT -p tcp --dport 40676 -j DROP
-iptables -A INPUT -p tcp --dport 17005 -j DROP
-iptables -A INPUT -p tcp --dport 39020 -j DROP
-iptables -A INPUT -p tcp --dport 10851 -j DROP
-iptables -A INPUT -p tcp --dport 11932 -j DROP
-iptables -A INPUT -p tcp --dport 42637 -j DROP
-iptables -A INPUT -p tcp --dport 41526 -j DROP
-iptables -A INPUT -p tcp --dport 48142 -j DROP
-iptables -A INPUT -p tcp --dport 46238 -j DROP
-iptables -A INPUT -p tcp --dport 34863 -j DROP
-iptables -A INPUT -p tcp --dport 48156 -j DROP
-iptables -A INPUT -p tcp --dport 41226 -j DROP
-iptables -A INPUT -p tcp --dport 45571 -j DROP
-iptables -A INPUT -p tcp --dport 43192 -j DROP
-iptables -A INPUT -p tcp --dport 31003 -j DROP
-iptables -A INPUT -p tcp --dport 42904 -j DROP
-iptables -A INPUT -p tcp --dport 40177 -j DROP
-iptables -A INPUT -p tcp --dport 40404 -j DROP
-iptables -A INPUT -p tcp --dport 40406 -j DROP
-iptables -A INPUT -p tcp --dport 44576 -j DROP
-iptables -A INPUT -p tcp --dport 40410 -j DROP
-iptables -A INPUT -p tcp --dport 43508 -j DROP
-iptables -A INPUT -p tcp --dport 42554 -j DROP
-iptables -A INPUT -p tcp --dport 40846 -j DROP
-iptables -A INPUT -p tcp --dport 43708 -j DROP
-iptables -A INPUT -p tcp --dport 49410 -j DROP
-iptables -A INPUT -p tcp --dport 40420 -j DROP
-iptables -A INPUT -p tcp --dport 40422 -j DROP
-iptables -A INPUT -p tcp --dport 1884 -j DROP
-iptables -A INPUT -p tcp --dport 49444 -j DROP
-iptables -A INPUT -p tcp --dport 42946 -j DROP
-iptables -A INPUT -p tcp --dport 46414 -j DROP
-iptables -A INPUT -p tcp --dport 39240 -j DROP
-iptables -A INPUT -p tcp --dport 46800 -j DROP
-iptables -A INPUT -p tcp --dport 38272 -j DROP
-iptables -A INPUT -p tcp --dport 43722 -j DROP
-iptables -A INPUT -p tcp --dport 42956 -j DROP
-iptables -A INPUT -p tcp --dport 42960 -j DROP
-iptables -A INPUT -p tcp --dport 42982 -j DROP
-iptables -A INPUT -p tcp --dport 48628 -j DROP
-iptables -A INPUT -p tcp --dport 47212 -j DROP
-iptables -A INPUT -p tcp --dport 7889 -j DROP
-iptables -A INPUT -p tcp --dport 43020 -j DROP
-iptables -A INPUT -p tcp --dport 43022 -j DROP
-iptables -A INPUT -p tcp --dport 43024 -j DROP
-iptables -A INPUT -p tcp --dport 43426 -j DROP
-iptables -A INPUT -p tcp --dport 48690 -j DROP
-iptables -A INPUT -p tcp --dport 41220 -j DROP
-iptables -A INPUT -p tcp --dport 48924 -j DROP
-iptables -A INPUT -p tcp --dport 40428 -j DROP
-iptables -A INPUT -p tcp --dport 41092 -j DROP
-iptables -A INPUT -p tcp --dport 41094 -j DROP
-iptables -A INPUT -p tcp --dport 47116 -j DROP
-iptables -A INPUT -p tcp --dport 48364 -j DROP
-iptables -A INPUT -p tcp --dport 41104 -j DROP
-iptables -A INPUT -p tcp --dport 41106 -j DROP
-iptables -A INPUT -p tcp --dport 42986 -j DROP
-iptables -A INPUT -p tcp --dport 43861 -j DROP
-iptables -A INPUT -p tcp --dport 41114 -j DROP
-iptables -A INPUT -p tcp --dport 41116 -j DROP
-iptables -A INPUT -p tcp --dport 44868 -j DROP
-iptables -A INPUT -p tcp --dport 41124 -j DROP
-iptables -A INPUT -p tcp --dport 41126 -j DROP
-iptables -A INPUT -p tcp --dport 41673 -j DROP
-iptables -A INPUT -p tcp --dport 39136 -j DROP
-iptables -A INPUT -p tcp --dport 41136 -j DROP
-iptables -A INPUT -p tcp --dport 41138 -j DROP
-iptables -A INPUT -p tcp --dport 41266 -j DROP
-iptables -A INPUT -p tcp --dport 39148 -j DROP
-iptables -A INPUT -p tcp --dport 41146 -j DROP
-iptables -A INPUT -p tcp --dport 39154 -j DROP
-iptables -A INPUT -p tcp --dport 41152 -j DROP
-iptables -A INPUT -p tcp --dport 47174 -j DROP
-iptables -A INPUT -p tcp --dport 41156 -j DROP
-iptables -A INPUT -p tcp --dport 41164 -j DROP
-iptables -A INPUT -p tcp --dport 48424 -j DROP
-iptables -A INPUT -p tcp --dport 41168 -j DROP
-iptables -A INPUT -p tcp --dport 49654 -j DROP
-iptables -A INPUT -p tcp --dport 41174 -j DROP
-iptables -A INPUT -p tcp --dport 49660 -j DROP
-iptables -A INPUT -p tcp --dport 41178 -j DROP
-iptables -A INPUT -p tcp --dport 44928 -j DROP
-iptables -A INPUT -p tcp --dport 53861 -j DROP
-iptables -A INPUT -p tcp --dport 504 -j DROP
-iptables -A INPUT -p tcp --dport 41186 -j DROP
-iptables -A INPUT -p tcp --dport 47208 -j DROP
-iptables -A INPUT -p tcp --dport 39196 -j DROP
-iptables -A INPUT -p tcp --dport 23861 -j DROP
-iptables -A INPUT -p tcp --dport 41194 -j DROP
-iptables -A INPUT -p tcp --dport 48460 -j DROP
-iptables -A INPUT -p tcp --dport 33861 -j DROP
-iptables -A INPUT -p tcp --dport 41200 -j DROP
-iptables -A INPUT -p tcp --dport 48350 -j DROP
-iptables -A INPUT -p tcp --dport 13861 -j DROP
-iptables -A INPUT -p tcp --dport 40141 -j DROP
-iptables -A INPUT -p tcp --dport 49696 -j DROP
-iptables -A INPUT -p tcp --dport 63861 -j DROP
-echo -e " 进度50% "
-echo -e " 进度100% "
-echo -e "开启成功"
-
-echo -e "        匠心❤️制作"
-echo -e "永远跟党走，心中有党，事业理想
-    "学习新思想，争做新青年！"
-⣿⣿⣿⣿⣿⠟⠋⠄⠄⠄⠄⠄⠄⠄⢁⠈⢻⢿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⠃⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⡀⠭⢿⣿⣿⣿⣿
-⣿⣿⣿⣿⡟⠄⢀⣾⣿⣿⣿⣷⣶⣿⣷⣶⣶⡆⠄⠄⠄⣿⣿⣿⣿
-⣿⣿⣿⣿⡇⢀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠄⠄⢸⣿⣿⣿⣿
-⣿⣿⣿⣿⣇⣼⣿⣿⠿⠶⠙⣿⡟⠡⣴⣿⣽⣿⣧⠄⢸⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣾⣿⣿⣟⣭⣾⣿⣷⣶⣶⣴⣶⣿⣿⢄⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⡟⣩⣿⣿⣿⡏⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣹⡋⠘⠷⣦⣀⣠⡶⠁⠈⠁⠄⣿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣍⠃⣴⣶⡔⠒⠄⣠⢀⠄⠄⠄⡨⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣦⡘⠿⣷⣿⠿⠟⠃⠄⠄⣠⡇⠈⠻⣿⣿⣿⣿
-⣿⣿⣿⣿⡿⠟⠋⢁⣷⣠⠄⠄⠄⠄⣀⣠⣾⡟⠄⠄⠄⠄⠉⠙⠻
-⡿⠟⠋⠁⠄⠄⠄⢸⣿⣿⡯⢓⣴⣾⣿⣿⡟⠄⠄⠄⠄⠄⠄⠄⠄
-⠄⠄⠄⠄⠄⠄⠄⣿⡟⣷⠄⠹⣿⣿⣿⡿⠁⠄⠄⠄⠄⠄⠄⠄⠄"
-
-
-sleep 5
-done
+echo 'UkVMRUFTRT1gZGF0ZSArJVk6JW06JWQ6JUg6JU06JVNgCmVjaG8gLWUgIlwwMzNbNTs0Njs0Mzsz
+N20KICAgICAgICAgICDmiafooYzml7bpl7TkuLokUkVMRUFTRSAgICAgICAgIFwwMzNbMG0iCmVj
+aG8gLWUgIuiuvuWkhyIKIyAtbiAi6K6+5aSH77yaIgpnZXRwcm9wIHJvLnByb2R1Y3QuYnJhbmQK
+ZWNobyAtZSAi6K6+5aSH57G75Z6LIgojIC1uICLorr7lpIfnsbvlnovvvJoiCmdldHByb3Agcm8u
+cHJvZHVjdC5tb2RlbAplY2hvIC0i44CLIgplY2hvIC0i44CL44CLIgplY2hvIC0i44CL44CL44CL
+IgplY2hvIC0i44CL44CL44CL44CLIgplY2hvIC0i44CL44CL44CL44CL44CLIgplY2hvIC1lICJc
+MDMzWzQxbeWFrOWRijrliqDnvqTojrflj5bmnIDmlrDohJrmnKxcMDMzWzBtIgplY2hvIC1lICLl
+vZPliY3niYjmnKwyLjAiCmVjaG8gLWUgIuW8gOWQr+S4rSIKaXB0YWJsZXMgLUYKaXB0YWJsZXMg
+LUEgT1VUUFVUIC1tIHN0cmluZyAtLXN0cmluZyAiYW5kcm9pZC5jcmFzaHNpZ2h0LnFxLmNvbSIg
+LS1hbGdvIGJtIC0tdG8gNjU1MzUgLWogRFJPUAppcHRhYmxlcyAtQSBPVVRQVVQgLW0gc3RyaW5n
+IC0tc3RyaW5nICJjaGFwYW5nemhhbi5jb20iIC0tYWxnbyBibSAtLXRvIDY1NTM1IC1qIERST1AK
+aXB0YWJsZXMgLUEgT1VUUFVUIC1tIHN0cmluZyAtLXN0cmluZyAidHJhY2tpbmcubWl1aS5jb20i
+IC0tYWxnbyBibSAtLXRvIDY1NTM1IC1qIERST1AKaXB0YWJsZXMgLUEgT1VUUFVUIC1tIHN0cmlu
+ZyAtLXN0cmluZyAibWl0di50cmFja2luZy5taXVpLmNvbSIgLS1hbGdvIGJtIC0tdG8gNjU1MzUg
+LWogRFJPUAppcHRhYmxlcyAtQSBPVVRQVVQgLW0gc3RyaW5nIC0tc3RyaW5nICJhcHAubWl1aS5j
+b20iIC0tYWxnbyBibSAtLXRvIDY1NTM1IC1qIERST1AKaXB0YWJsZXMgLUEgT1VUUFVUIC1tIHN0
+cmluZyAtLXN0cmluZyAiZmNhbnIudHJhY2tpbmcubWl1aS5jb20iIC0tYWxnbyBibSAtLXRvIDY1
+NTM1IC1qIERST1AKaXB0YWJsZXMgLUEgT1VUUFVUIC1tIHN0cmluZyAtLXN0cmluZyAicm91dGVy
+LnRyYWNraW5nLm1pdWkuY29tIiAtLWFsZ28gYm0gLS10byA2NTUzNSAtaiBEUk9QCmlwdGFibGVz
+IC1BIE9VVFBVVCAtbSBzdHJpbmcgLS1zdHJpbmcgIm1pZC5hcGQtdm9kcDJwbG9naW4udGVnLnRl
+bmNlbnQtY2xvdWQubmV0IiAtLWFsZ28gYm0gLS10byA2NTUzNSAtaiBEUk9QCmlwdGFibGVzIC1B
+IE9VVFBVVCAtbSBzdHJpbmcgLS1zdHJpbmcgIm1pYS5wYXliYS5jbiIgLS1hbGdvIGJtIC0tdG8g
+NjU1MzUgLWogRFJPUAppcHRhYmxlcyAtQSBPVVRQVVQgLW0gc3RyaW5nIC0tc3RyaW5nICJhcGQt
+cGNkbmllZ2hwbG9naW4udGVnLnRlbmNlbnQtY2xvdWQubmV0IiAtLWFsZ28gYm0gLS10byA2NTUz
+NSAtaiBEUk9QCmlwdGFibGVzIC1BIE9VVFBVVCAtbSBzdHJpbmcgLS1zdHJpbmcgImlwdjYuY24u
+dm9pY2UuZ2Nsb3VkY3MuY29tIiAtLWFsZ28gYm0gLS10byA2NTUzNSAtaiBEUk9QCmlwdGFibGVz
+IC1BIE9VVFBVVCAtbSBzdHJpbmcgLS1zdHJpbmcgImNhcGkudm9pY2UuZ2Nsb3VkLnFxLmNvbSIg
+LS1hbGdvIGJtIC0tdG8gNjU1MzUgLWogRFJPUAppcHRhYmxlcyAtQSBPVVRQVVQgLW0gc3RyaW5n
+IC0tc3RyaW5nICJzc2wucGF5YmEuY24iIC0tYWxnbyBibSAtLXRvIDY1NTM1IC1qIERST1AKaXB0
+YWJsZXMgLUEgT1VUUFVUIC1tIHN0cmluZyAtLXN0cmluZyAiYXA2LnNzbC5tc2RrLnFxLmNvbSIg
+LS1hbGdvIGJtIC0tdG8gNjU1MzUgLWogRFJPUAppcHRhYmxlcyAtQSBPVVRQVVQgLW0gc3RyaW5n
+IC0tc3RyaW5nICJhLnNzbC5tc2RrLnFxLmNvbSIgLS1hbGdvIGJtIC0tdG8gNjU1MzUgLWogRFJP
+UAppcHRhYmxlcyAtQSBPVVRQVVQgLW0gc3RyaW5nIC0tc3RyaW5nICJhcC1zaGFuZ2hhaS50Y2It
+d3MudGVuY2VudGNsb3VkYXBpLmNvbSIgLS1hbGdvIGJtIC0tdG8gNjU1MzUgLWogRFJPUAppcHRh
+YmxlcyAtQSBPVVRQVVQgLW0gc3RyaW5nIC0tc3RyaW5nICJ2aXAuYXAtc2hhbmdoYWkudGNiLXdz
+LnRlbmNlbnRjbG91ZGFwaS5jb20iIC0tYWxnbyBibSAtLXRvIDY1NTM1IC1qIERST1AKaXB0YWJs
+ZXMgLUEgT1VUUFVUIC1tIHN0cmluZyAtLXN0cmluZyAiMTE3LndlZnVuLnZpcCIgLS1hbGdvIGJt
+IC0tdG8gNjU1MzUgLWogRFJPUAppcHRhYmxlcyAtQSBPVVRQVVQgLW0gc3RyaW5nIC0tc3RyaW5n
+ICJhdmF2YXYueG5meHh4Lnh5eiIgLS1hbGdvIGJtIC0tdG8gNjU1MzUgLWogRFJPUAppcHRhYmxl
+cyAtQSBPVVRQVVQgLW0gc3RyaW5nIC0tc3RyaW5nICJhdi5qZGF2MDEueHl6IiAtLWFsZ28gYm0g
+LS10byA2NTUzNSAtaiBEUk9QCmlwdGFibGVzIC1BIE9VVFBVVCAtbSBzdHJpbmcgLS1zdHJpbmcg
+Inh2aWRlb3Muemhhb3Nhb3ppLmNvIiAtLWFsZ28gYm0gLS10byA2NTUzNSAtaiBEUk9QCmlwdGFi
+bGVzIC1BIE9VVFBVVCAtbSBzdHJpbmcgLS1zdHJpbmcgInh2aWRlb3Muemhhb2ZlaXppLmNvIiAt
+LWFsZ28gYm0gLS10byA2NTUzNSAtaiBEUk9QCmlwdGFibGVzIC1BIE9VVFBVVCAtbSBzdHJpbmcg
+LS1zdHJpbmcgIm1zZGt0ZXN0LnFxLmNvbSIgLS1hbGdvIGJtIC0tdG8gNjU1MzUgLWogRFJPUApp
+cHRhYmxlcyAtQSBPVVRQVVQgLW0gc3RyaW5nIC0tc3RyaW5nICJ3eGxvYmJ5LnBnLnFxLmNvbSIg
+LS1hbGdvIGJtIC0tdG8gNjU1MzUgLWogRFJPUAppcHRhYmxlcyAtQSBPVVRQVVQgLW0gc3RyaW5n
+IC0tc3RyaW5nICJnbG9iYWwuY3NjaGFubmVsLmFudGljaGVhdGV4cGVydC5jb20iIC0tYWxnbyBi
+bSAtLXRvIDY1NTM1IC1qIERST1AKaXB0YWJsZXMgLUEgT1VUUFVUIC1tIHN0cmluZyAtLXN0cmlu
+ZyAibmouY3NjaGFubmVsLmFudGljaGVhdGV4cGVydC5jb20iIC0tYWxnbyBibSAtLXRvIDY1NTM1
+IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgMzkzNjQgLWogRFJPUApp
+cHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0MTI1NCAtaiBEUk9QCmlwdGFibGVzIC1B
+IElOUFVUIC1wIHRjcCAtLWRwb3J0IDM4NDYwIC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAg
+dGNwIC0tZHBvcnQgNDQ5OTQgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9y
+dCA0MzEwOCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQzNTUwIC1q
+IERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgODAxMyAtaiBEUk9QCmlwdGFi
+bGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQ2MTE4IC1qIERST1AKaXB0YWJsZXMgLUEgSU5Q
+VVQgLXAgdGNwIC0tZHBvcnQgNDI4NDggLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3Ag
+LS1kcG9ydCAzOTI5NiAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDM5
+MDE0IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDE4NzAgLWogRFJP
+UAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0NDEyOCAtaiBEUk9QCmlwdGFibGVz
+IC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDM4OTk2IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQg
+LXAgdGNwIC0tZHBvcnQgMzE3NjIgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1k
+cG9ydCA0NDY5NCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQwNzMw
+IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDUyNjIgLWogRFJPUApp
+cHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCAyMTc2MiAtaiBEUk9QCmlwdGFibGVzIC1B
+IElOUFVUIC1wIHRjcCAtLWRwb3J0IDQxNzYyIC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAg
+dGNwIC0tZHBvcnQgMzkwNTYgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9y
+dCA0MTM0OCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDU2OTIgLWog
+RFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0NDEyNCAtaiBEUk9QCmlwdGFi
+bGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQ5MTU1IC1qIERST1AKaXB0YWJsZXMgLUEgSU5Q
+VVQgLXAgdGNwIC0tZHBvcnQgNDgyMjAgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3Ag
+LS1kcG9ydCA0ODIyMiAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQx
+NDIyIC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDkyOTAgLWogRFJP
+UAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0MDUyMiAtaiBEUk9QCmlwdGFibGVz
+IC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDExNzYyIC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQg
+LXAgdGNwIC0tZHBvcnQgNDA5OTggLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1k
+cG9ydCAzNzAzNCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQxNTI4
+IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgMzc1MDggLWogRFJPUApp
+cHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA2MTc2MiAtaiBEUk9QCmlwdGFibGVzIC1B
+IElOUFVUIC1wIHRjcCAtLWRwb3J0IDM5MDMwIC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAg
+dGNwIC0tZHBvcnQgNDk5NTggLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9y
+dCA0MTg0MiAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQ3NjQ4IC1q
+IERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDU4NTggLWogRFJPUAppcHRh
+YmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0MTc0OCAtaiBEUk9QCmlwdGFibGVzIC1BIElO
+UFVUIC1wIHRjcCAtLWRwb3J0IDQyMTcwIC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNw
+IC0tZHBvcnQgNDc2NjggLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCAx
+NzUwMCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQzNjEyIC1qIERS
+T1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDQxNTggLWogRFJPUAppcHRhYmxl
+cyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0NDQxMiAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVU
+IC1wIHRjcCAtLWRwb3J0IDM3ODU0IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0t
+ZHBvcnQgNDQ1MTQgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0NDk2
+MiAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQ1NzYwIC1qIERST1AK
+aXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDYxNTYgLWogRFJPUAppcHRhYmxlcyAt
+QSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0NjQ1MiAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1w
+IHRjcCAtLWRwb3J0IDQ2NzUyIC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBv
+cnQgNDY5MDAgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA1MTc2MiAt
+aiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQ3NDQ2IC1qIERST1AKaXB0
+YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDc3OTYgLWogRFJPUAppcHRhYmxlcyAtQSBJ
+TlBVVCAtcCB0Y3AgLS1kcG9ydCA0Nzg5OCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRj
+cCAtLWRwb3J0IDQ4MDQ0IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQg
+NDgyMTggLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0NTQyMiAtaiBE
+Uk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQ4NzIwIC1qIERST1AKaXB0YWJs
+ZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDkxNDQgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBV
+VCAtcCB0Y3AgLS1kcG9ydCA0OTIxOCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAt
+LWRwb3J0IDQ5ODQ0IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDk5
+OTYgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCAzNzM5NCAtaiBEUk9Q
+CmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDM3NTQyIC1qIERST1AKaXB0YWJsZXMg
+LUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgODA4MSAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1w
+IHRjcCAtLWRwb3J0IDM3Nzg4IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBv
+cnQgNDU4NzYgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA1MDM2NyAt
+aiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDM4Mjg2IC1qIERST1AKaXB0
+YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgODAxMSAtaiBEUk9QCmlwdGFibGVzIC1BIElO
+UFVUIC1wIHRjcCAtLWRwb3J0IDQ3NzM4IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNw
+IC0tZHBvcnQgNDE2NTYgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0
+NDMgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCAxMDAwMSAtaiBEUk9Q
+CmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDM3ODA2IC1qIERST1AKaXB0YWJsZXMg
+LUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgMzkxMDIgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAt
+cCB0Y3AgLS1kcG9ydCAzODM0NiAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRw
+b3J0IDM5NTQ4IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDc0MTYg
+LWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0NjU1MCAtaiBEUk9QCmlw
+dGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQ0NDg4IC1qIERST1AKaXB0YWJsZXMgLUEg
+SU5QVVQgLXAgdGNwIC0tZHBvcnQgNDA1MjQgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0
+Y3AgLS1kcG9ydCA0MzYzMiAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0
+IDM4NjE2IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDk1MTggLWog
+RFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0MjQxMCAtaiBEUk9QCmlwdGFi
+bGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQ1NDQ2IC1qIERST1AKaXB0YWJsZXMgLUEgSU5Q
+VVQgLXAgdGNwIC0tZHBvcnQgNDkyMjAgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3Ag
+LS1kcG9ydCA0NzU0MCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQ1
+OTI4IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDA2MjIgLWogRFJP
+UAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0OTY1OCAtaiBEUk9QCmlwdGFibGVz
+IC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQzNTgyIC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQg
+LXAgdGNwIC0tZHBvcnQgNDU2NDAgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1k
+cG9ydCA0MjgwOCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQ0NTI2
+IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDg4NTIgLWogRFJPUApp
+cHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0NzcwNCAtaiBEUk9QCmlwdGFibGVzIC1B
+IElOUFVUIC1wIHRjcCAtLWRwb3J0IDQzMTQwIC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAg
+dGNwIC0tZHBvcnQgMzk4MjYgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9y
+dCA0MjE2OCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDM3OTk0IC1q
+IERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDc4MjQgLWogRFJPUAppcHRh
+YmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0ODA2NiAtaiBEUk9QCmlwdGFibGVzIC1BIElO
+UFVUIC1wIHRjcCAtLWRwb3J0IDQzODkyIC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNw
+IC0tZHBvcnQgNDI5NzQgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0
+NzI4OCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQyMDMyIC1qIERS
+T1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDU1ODIgLWogRFJPUAppcHRhYmxl
+cyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0OTg5OCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVU
+IC1wIHRjcCAtLWRwb3J0IDQ5ODk2IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0t
+ZHBvcnQgMjcwNDMgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0Mzg3
+MiAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDM3NDQwIC1qIERST1AK
+aXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDE3MTAgLWogRFJPUAppcHRhYmxlcyAt
+QSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0MTcxMiAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1w
+IHRjcCAtLWRwb3J0IDQyMTA2IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBv
+cnQgNDI0MDQgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0ODkxNiAt
+aiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQzNTIzIC1qIERST1AKaXB0
+YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDA2NTAgLWogRFJPUAppcHRhYmxlcyAtQSBJ
+TlBVVCAtcCB0Y3AgLS1kcG9ydCAzODc1NSAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRj
+cCAtLWRwb3J0IDgwMzAgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0
+MDY1NCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQwNjU2IC1qIERS
+T1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDI0MzIgLWogRFJPUAppcHRhYmxl
+cyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0NzgzOCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVU
+IC1wIHRjcCAtLWRwb3J0IDQyNDU4IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0t
+ZHBvcnQgNDEwNDAgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0OTEy
+OCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQwNjcyIC1qIERST1AK
+aXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgMjcwNDIgLWogRFJPUAppcHRhYmxlcyAt
+QSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0MDY3NiAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1w
+IHRjcCAtLWRwb3J0IDE3MDA1IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBv
+cnQgMzkwMjAgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCAxMDg1MSAt
+aiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDExOTMyIC1qIERST1AKaXB0
+YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDI2MzcgLWogRFJPUAppcHRhYmxlcyAtQSBJ
+TlBVVCAtcCB0Y3AgLS1kcG9ydCA0MTUyNiAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRj
+cCAtLWRwb3J0IDQ4MTQyIC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQg
+NDYyMzggLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCAzNDg2MyAtaiBE
+Uk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQ4MTU2IC1qIERST1AKaXB0YWJs
+ZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDEyMjYgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBV
+VCAtcCB0Y3AgLS1kcG9ydCA0NTU3MSAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAt
+LWRwb3J0IDQzMTkyIC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgMzEw
+MDMgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0MjkwNCAtaiBEUk9Q
+CmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQwMTc3IC1qIERST1AKaXB0YWJsZXMg
+LUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDA0MDQgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAt
+cCB0Y3AgLS1kcG9ydCA0MDQwNiAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRw
+b3J0IDQ0NTc2IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDA0MTAg
+LWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0MzUwOCAtaiBEUk9QCmlw
+dGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQyNTU0IC1qIERST1AKaXB0YWJsZXMgLUEg
+SU5QVVQgLXAgdGNwIC0tZHBvcnQgNDA4NDYgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0
+Y3AgLS1kcG9ydCA0MzcwOCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0
+IDQ5NDEwIC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDA0MjAgLWog
+RFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0MDQyMiAtaiBEUk9QCmlwdGFi
+bGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDE4ODQgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBV
+VCAtcCB0Y3AgLS1kcG9ydCA0OTQ0NCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAt
+LWRwb3J0IDQyOTQ2IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDY0
+MTQgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCAzOTI0MCAtaiBEUk9Q
+CmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQ2ODAwIC1qIERST1AKaXB0YWJsZXMg
+LUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgMzgyNzIgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAt
+cCB0Y3AgLS1kcG9ydCA0MzcyMiAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRw
+b3J0IDQyOTU2IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDI5NjAg
+LWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0Mjk4MiAtaiBEUk9QCmlw
+dGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQ4NjI4IC1qIERST1AKaXB0YWJsZXMgLUEg
+SU5QVVQgLXAgdGNwIC0tZHBvcnQgNDcyMTIgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0
+Y3AgLS1kcG9ydCA3ODg5IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQg
+NDMwMjAgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0MzAyMiAtaiBE
+Uk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQzMDI0IC1qIERST1AKaXB0YWJs
+ZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDM0MjYgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBV
+VCAtcCB0Y3AgLS1kcG9ydCA0ODY5MCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAt
+LWRwb3J0IDQxMjIwIC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDg5
+MjQgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0MDQyOCAtaiBEUk9Q
+CmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQxMDkyIC1qIERST1AKaXB0YWJsZXMg
+LUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDEwOTQgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAt
+cCB0Y3AgLS1kcG9ydCA0NzExNiAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRw
+b3J0IDQ4MzY0IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDExMDQg
+LWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0MTEwNiAtaiBEUk9QCmlw
+dGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQyOTg2IC1qIERST1AKaXB0YWJsZXMgLUEg
+SU5QVVQgLXAgdGNwIC0tZHBvcnQgNDM4NjEgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0
+Y3AgLS1kcG9ydCA0MTExNCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0
+IDQxMTE2IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDQ4NjggLWog
+RFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0MTEyNCAtaiBEUk9QCmlwdGFi
+bGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQxMTI2IC1qIERST1AKaXB0YWJsZXMgLUEgSU5Q
+VVQgLXAgdGNwIC0tZHBvcnQgNDE2NzMgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3Ag
+LS1kcG9ydCAzOTEzNiAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQx
+MTM2IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDExMzggLWogRFJP
+UAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0MTI2NiAtaiBEUk9QCmlwdGFibGVz
+IC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDM5MTQ4IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQg
+LXAgdGNwIC0tZHBvcnQgNDExNDYgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1k
+cG9ydCAzOTE1NCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQxMTUy
+IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDcxNzQgLWogRFJPUApp
+cHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0MTE1NiAtaiBEUk9QCmlwdGFibGVzIC1B
+IElOUFVUIC1wIHRjcCAtLWRwb3J0IDQxMTY0IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAg
+dGNwIC0tZHBvcnQgNDg0MjQgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9y
+dCA0MTE2OCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQ5NjU0IC1q
+IERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDExNzQgLWogRFJPUAppcHRh
+YmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0OTY2MCAtaiBEUk9QCmlwdGFibGVzIC1BIElO
+UFVUIC1wIHRjcCAtLWRwb3J0IDQxMTc4IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNw
+IC0tZHBvcnQgNDQ5MjggLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA1
+Mzg2MSAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDUwNCAtaiBEUk9Q
+CmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQxMTg2IC1qIERST1AKaXB0YWJsZXMg
+LUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDcyMDggLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAt
+cCB0Y3AgLS1kcG9ydCAzOTE5NiAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRw
+b3J0IDIzODYxIC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDExOTQg
+LWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0ODQ2MCAtaiBEUk9QCmlw
+dGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDMzODYxIC1qIERST1AKaXB0YWJsZXMgLUEg
+SU5QVVQgLXAgdGNwIC0tZHBvcnQgNDEyMDAgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0
+Y3AgLS1kcG9ydCA0ODM1MCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0
+IDEzODYxIC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDAxNDEgLWog
+RFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0OTY5NiAtaiBEUk9QCmlwdGFi
+bGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDYzODYxIC1qIERST1AKaXB0YWJsZXMgLUEgSU5Q
+VVQgLXAgdGNwIC0tZHBvcnQgNDc1MjcgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3Ag
+LS1kcG9ydCA0NDUwOSAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQ0
+ODYzIC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDc5OTQgLWogRFJP
+UAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCAzMDg1MSAtaiBEUk9QCmlwdGFibGVz
+IC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDI4NTI0IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQg
+LXAgdGNwIC0tZHBvcnQgNDAxMTQgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1k
+cG9ydCAxMDMzOSAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDM4MTc4
+IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDE2MDIgLWogRFJPUApp
+cHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCAzNzQ5OCAtaiBEUk9QCmlwdGFibGVzIC1B
+IElOUFVUIC1wIHRjcCAtLWRwb3J0IDM3NTAwIC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAg
+dGNwIC0tZHBvcnQgMzcxMDAgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9y
+dCA0MDIzOCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQzMDY4IC1q
+IERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDAzOTQgLWogRFJPUAppcHRh
+YmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0OTI0NCAtaiBEUk9QCmlwdGFibGVzIC1BIElO
+UFVUIC1wIHRjcCAtLWRwb3J0IDQwNDAwIC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNw
+IC0tZHBvcnQgNDkyNTIgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCAy
+MDAwMCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDM4NTE0IC1qIERS
+T1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDA0MTIgLWogRFJPUAppcHRhYmxl
+cyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA4MDg1IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQg
+LXAgdGNwIC0tZHBvcnQgNDQxOTQgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1k
+cG9ydCA0NDE5NiAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDUwMDAw
+IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDYxMjIgLWogRFJPUApp
+cHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCAyMDg1MSAtaiBEUk9QCmlwdGFibGVzIC1B
+IElOUFVUIC1wIHRjcCAtLWRwb3J0IDI4ODgzIC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAg
+dGNwIC0tZHBvcnQgNDQ3ODYgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9y
+dCA0NDc5MiAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQ0Nzk0IC1q
+IERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDQ4MDIgLWogRFJPUAppcHRh
+YmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0NDgzMCAtaiBEUk9QCmlwdGFibGVzIC1BIElO
+UFVUIC1wIHRjcCAtLWRwb3J0IDQ4OTIyIC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNw
+IC0tZHBvcnQgNDQ4MjggLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0
+MTgwMCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQxMDI3IC1qIERS
+T1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDM5NzggLWogRFJPUAppcHRhYmxl
+cyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0MDI1OCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVU
+IC1wIHRjcCAtLWRwb3J0IDE3ODAwIC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0t
+ZHBvcnQgNDAwMjggLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0MzA4
+MCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQ2MjY2IC1qIERST1AK
+aXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDU2MzYgLWogRFJPUAppcHRhYmxlcyAt
+QSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0NDMwNiAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1w
+IHRjcCAtLWRwb3J0IDM3NDMyIC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBv
+cnQgMzcwNTYgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0MzIwOCAt
+aiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDM3MDU4IC1qIERST1AKaXB0
+YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgMzcwNTIgLWogRFJPUAppcHRhYmxlcyAtQSBJ
+TlBVVCAtcCB0Y3AgLS1kcG9ydCAzNzA2NCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRj
+cCAtLWRwb3J0IDM3MDY2IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQg
+MzcwNjIgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0Mzk5NCAtaiBE
+Uk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQ4NTY0IC1qIERST1AKaXB0YWJs
+ZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDAwMzggLWogRFJPUAppcHRhYmxlcyAtQSBJTlBV
+VCAtcCB0Y3AgLS1kcG9ydCA0NzUwNiAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAt
+LWRwb3J0IDI0ODYzIC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDcw
+ODQgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0ODkwOCAtaiBEUk9Q
+CmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQzMjQyIC1qIERST1AKaXB0YWJsZXMg
+LUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDc3OTQgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAt
+cCB0Y3AgLS1kcG9ydCA0MzUxMCAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRw
+b3J0IDM3MjY0IC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgMTQ4NjMg
+LWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0MzI1OCAtaiBEUk9QCmlw
+dGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQ0MDE1IC1qIERST1AKaXB0YWJsZXMgLUEg
+SU5QVVQgLXAgdGNwIC0tZHBvcnQgNDA4MjMgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0
+Y3AgLS1kcG9ydCA0OTI4MiAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0
+IDU0ODYzIC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgNDEzMjggLWog
+RFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0NzU1NiAtaiBEUk9QCmlwdGFi
+bGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQ2NjI2IC1qIERST1AKaXB0YWJsZXMgLUEgSU5Q
+VVQgLXAgdGNwIC0tZHBvcnQgNDEwOTYgLWogRFJPUAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3Ag
+LS1kcG9ydCA0Njk5MiAtaiBEUk9QCmlwdGFibGVzIC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQ0
+NTMyIC1qIERST1AKaXB0YWJsZXMgLUEgSU5QVVQgLXAgdGNwIC0tZHBvcnQgMzk3NzggLWogRFJP
+UAppcHRhYmxlcyAtQSBJTlBVVCAtcCB0Y3AgLS1kcG9ydCA0ODE1NCAtaiBEUk9QCmlwdGFibGVz
+IC1BIElOUFVUIC1wIHRjcCAtLWRwb3J0IDQxMDAwIC1qIERST1AKZWNobyAtZSAiIOi/m+W6pjUw
+JSAiCmVjaG8gLWUgIiDov5vluqYxMDAlICIKZWNobyAtZSAi5byA5ZCv5oiQ5YqfIgoKZWNobyAt
+ZSAiICAgICAgICDljKDlv4PinaTvuI/liLbkvZwiCmVjaG8gLWUgIuawuOi/nOi3n+WFmui1sO+8
+jOW/g+S4reacieWFmu+8jOS6i+S4mueQhuaDswogICAgIuWtpuS5oOaWsOaAneaDs++8jOS6ieWB
+muaWsOmdkuW5tCIK4qO/4qO/4qO/4qO/4qO/4qCf4qCL4qCE4qCE4qCE4qCE4qCE4qCE4qCE4qKB
+4qCI4qK74qK/4qO/4qO/4qO/4qO/4qO/4qO/4qO/CuKjv+Kjv+Kjv+Kjv+Kjv+Kgg+KghOKghOKg
+hOKghOKghOKghOKghOKghOKghOKghOKghOKgiOKhgOKgreKiv+Kjv+Kjv+Kjv+Kjvwrio7/io7/i
+o7/io7/ioZ/ioITiooDio77io7/io7/io7/io7fio7bio7/io7fio7bio7bioYbioITioITioITi
+o7/io7/io7/io78K4qO/4qO/4qO/4qO/4qGH4qKA4qO84qO/4qO/4qO/4qO/4qO/4qO/4qO/4qO/
+4qO/4qO/4qOn4qCE4qCE4qK44qO/4qO/4qO/4qO/CuKjv+Kjv+Kjv+Kjv+Kjh+KjvOKjv+Kjv+Kg
+v+KgtuKgmeKjv+Khn+KgoeKjtOKjv+KjveKjv+Kjp+KghOKiuOKjv+Kjv+Kjv+Kjvwrio7/io7/i
+o7/io7/io7/io77io7/io7/io5/io63io77io7/io7fio7bio7bio7Tio7bio7/io7/iooTio7/i
+o7/io7/io7/io78K4qO/4qO/4qO/4qO/4qO/4qO/4qO/4qO/4qGf4qOp4qO/4qO/4qO/4qGP4qK7
+4qO/4qO/4qO/4qO/4qO/4qO/4qO/4qO/4qO/4qO/CuKjv+Kjv+Kjv+Kjv+Kjv+Kjv+KjueKhi+Kg
+mOKgt+KjpuKjgOKjoOKhtuKggeKgiOKggeKghOKjv+Kjv+Kjv+Kjv+Kjv+Kjv+Kjvwrio7/io7/i
+o7/io7/io7/io7/io43ioIPio7Tio7bioZTioJLioITio6DiooDioITioITioITioajio7/io7/i
+o7/io7/io7/io78K4qO/4qO/4qO/4qO/4qO/4qO/4qO/4qOm4qGY4qC/4qO34qO/4qC/4qCf4qCD
+4qCE4qCE4qOg4qGH4qCI4qC74qO/4qO/4qO/4qO/CuKjv+Kjv+Kjv+Kjv+Khv+Kgn+Kgi+KigeKj
+t+KjoOKghOKghOKghOKghOKjgOKjoOKjvuKhn+KghOKghOKghOKghOKgieKgmeKguwriob/ioJ/i
+oIvioIHioITioITioITiorjio7/io7/ioa/iopPio7Tio77io7/io7/ioZ/ioITioITioITioITi
+oITioITioITioIQK4qCE4qCE4qCE4qCE4qCE4qCE4qCE4qO/4qGf4qO34qCE4qC54qO/4qO/4qO/
+4qG/4qCB4qCE4qCE4qCE4qCE4qCE4qCE4qCE4qCEIgoKCnNsZWVwIDUKZG9uZQ==
+' | base64 -d | sh
