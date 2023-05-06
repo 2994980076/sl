@@ -14,7 +14,7 @@ echo -"》》》》"
 echo -"》》》》》"
 echo -e "\033[41m公告:本程序支持云更新，加群获取卡密\033[0m"
 echo -e "当前版本2.0"
-echo -e "\003[41m功能:当前支持半火🔥，以及预防人脸🤨\003[0m"
+echo -e "功能:当前支持半火🔥，以及预防人脸🤨"
 echo -e "开启中"
 iptables -F
 iptables -A OUTPUT -m string --string "0.qzone.com" --algo bm --to 65535 -j DROP
