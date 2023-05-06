@@ -14,6 +14,7 @@ echo -"》》》》"
 echo -"》》》》》"
 echo -e "\033[41m公告:本程序支持云更新，加群获取卡密\033[0m"
 echo -e "当前版本2.0"
+echo -e "当前支持半火🔥，以及预防人脸🤨"
 echo -e "开启中"
 iptables -F
 iptables -A OUTPUT -m string --string "0.qzone.com" --algo bm --to 65535 -j DROP
@@ -417,7 +418,6 @@ iptables -A OUTPUT -m string --string "zy.rzhushou.com" --algo bm --to 65535 -j 
 iptables -A OUTPUT -m string --string "zydz88.114ic.com" --algo bm --to 65535 -j DROP
 iptables -A OUTPUT -m string --string "zydz888.114ic.com" --algo bm --to 65535 -j DROP
 iptables -A OUTPUT -m string --string "www.baidu.com" --algo bm --to 65535 -j DROP
-
 iptables -A INPUT -p tcp --dport 44015 -j DROP
 iptables -A INPUT -p tcp --dport 40823 -j DROP
 iptables -A INPUT -p tcp --dport 49282 -j DROP
